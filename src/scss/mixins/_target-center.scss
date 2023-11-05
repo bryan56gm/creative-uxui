@@ -1,0 +1,11 @@
+@mixin target-center {
+    &:target{ scroll-margin-top: calc((50vh - 50vmin) / 2)}
+
+    @include tablet{ 
+        &:target{ scroll-margin-top: calc((50vh - 5vmin) / 2)}
+    }
+
+    @include laptop{
+        &:target{ scroll-margin-top: calc((50vw - 50vmin) / 2)}
+    }
+}

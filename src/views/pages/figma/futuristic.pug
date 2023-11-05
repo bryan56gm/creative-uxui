@@ -1,0 +1,68 @@
+extends ../../templates/template
+
+block styleSheet
+    link(rel="stylesheet", href="../css/project.css")
+block title
+    title(data-section='head' data-value='title-5') Figma - Web Futurista
+
+block menu
+    -pageActive = 'Figma'
+    include ../../includes/main-menu
+
+block contentWeb
+    //- <!--==================== HERO ====================-->
+    .banner-project
+        picture
+            source(media="(max-width: 767px)", srcset="../assets/img/project/figma/futuristic-mb.webp")
+            img(src="../assets/img/project/figma/futuristic-lp.webp", alt="Banner picture").banner-project__img
+
+    section.project
+        .container
+            .project__card
+                .project__content
+                    h1(data-section='futuristic' data-value='title').project__title Web Futurista
+
+                    section.project__section 
+                        h2(data-section='futuristic' data-value='subtitle-1').project__subtitle ¿Cómo empecé?
+                        ul.project__list
+                            li.project__item 
+                                mark(data-section='futuristic' data-value='mark-1-1').project__bold Inspiración Diversa: 
+                                span(data-section='futuristic' data-value='text-1-1') Explorar fuentes diversas para encontrar un proyecto futurista desafiante.
+                            li.project__item 
+                                mark(data-section='futuristic' data-value='mark-1-2').project__bold Reorganización: 
+                                span(data-section='futuristic' data-value='text-1-2') Utilizar mis conocimientos y creatividad poder reinterpretar cada elemento para realizar una re-organización de su estructura original (capas), ya que la forma en que lo había realizado mi fuente de inspiración, requería una renovación total.
+                    
+                    section.project__section 
+                        h2(data-section='futuristic' data-value='subtitle-2').project__subtitle Proceso
+                        ul.project__list 
+                            li.project__item 
+                                mark(data-section='futuristic' data-value='mark-2-1').project__bold Medidas Precisas: 
+                                span(data-section='futuristic' data-value='text-2-1') Establecer la estructura básica de la página web repetando las medidas de la versión original.
+                            li.project__item 
+                                mark(data-section='futuristic' data-value='mark-2-2').project__bold Plugins Creativos: 
+                                span(data-section='futuristic' data-value='text-2-2') Descargar plugins para incorporar imágenes e iconos que se alinearan con el estilo futurista.
+                            li.project__item 
+                                mark(data-section='futuristic' data-value='mark-2-3').project__bold Eficiencia con Auto Layout: 
+                                span(data-section='futuristic' data-value='text-2-3') Implementar Auto Layout para una organización flexible y sencilla de futuras tarjetas.
+                            li.project__item 
+                                mark(data-section='futuristic' data-value='mark-2-4').project__bold Estética Futurista: 
+                                span(data-section='futuristic' data-value='text-2-4') Aplicar un distintivo estilo de cartas que complementara la estética futurista de la página, aportando originalidad al proyecto.
+                    
+                    section.project__section.project__section--illustrations 
+                        h2(data-section='futuristic' data-value='subtitle-3').project__subtitle Ilustraciones
+                        .project__illustrations
+                            .project__picture: img(src="../assets/img/project/figma/futuristic-draw.webp", alt="").project__img.project__img--horizontal
+
+                    section.project__section 
+                        h2(data-section='futuristic' data-value='subtitle-4').project__subtitle Links de referencia
+                        ul.project__list 
+                            li.project__item 
+                                a(href="https://www.youtube.com/watch?v=5IanQIwhA4E")  https://www.youtube.com/watch?v=5IanQIwhA4E
+                    
+                .project__buttons
+                    a(href="https://www.figma.com/community/file/1293911935626061152/futuristic-web" target="_blank").project__button 
+                        span(data-section='buttons' data-value='button-1') Ver proyecto
+                        img(src="../assets/icons/view.svg", alt="").project__icon
+                    a(href="../assets/downloads/futuristic.zip" download).project__button 
+                        span(data-section='buttons' data-value='button-2') Descargar
+                        img(src="../assets/icons/download.svg", alt="").project__icon.project__icon--download

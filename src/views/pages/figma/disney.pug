@@ -1,0 +1,79 @@
+extends ../../templates/template
+
+block styleSheet
+  link(rel="stylesheet", href="../css/project.css")
+block title
+    title(data-section='head' data-value='title-4') Figma - Disney
+
+block menu
+    -pageActive = 'Figma'
+    include ../../includes/main-menu
+
+block contentWeb
+    //- <!--==================== HERO ====================-->
+    .banner-project
+        picture
+            source(media="(max-width: 767px)", srcset="../assets/img/project/figma/disney-mb.webp")
+            img(src="../assets/img/project/figma/disney-lp.webp", alt="Banner picture").banner-project__img
+
+    section.project
+        .container
+            .project__card
+                .project__content
+                    h1(data-section='disney' data-value='title').project__title Disney+
+
+                    section.project__section 
+                        h2(data-section='disney' data-value='subtitle-1').project__subtitle ¿Cómo empecé?
+                        
+                        ul.project__list
+                            li.project__item 
+                                mark(data-section='disney' data-value='mark-1-1').project__bold Objetivo Inspirador: 
+                                span(data-section='disney' data-value='text-1-1') Realizar un proyecto con el objetivo de crear una réplica de las mejores plataformas de streaming.
+                            li.project__item 
+                                mark(data-section='disney' data-value='mark-1-2').project__bold Acceso desde Dentro: 
+                                span(data-section='disney' data-value='text-1-1') Aprovechar mi condición de usuario, para poder accede a la aplicación original y trabajar desde allí.
+                    
+                    section.project__section 
+                        h2(data-section='disney' data-value='subtitle-2').project__subtitle Proceso
+
+                        ul.project__list 
+                            li.project__item 
+                                mark(data-section='disney' data-value='mark-2-1').project__bold Diseño en Figma: 
+                                span(data-section='disney' data-value='text-2-1') Comenzar a crear la estructura inicial en Figma, estructurando los elementos y el contenido de manera organizada.
+                            li.project__item 
+                                mark(data-section='disney' data-value='mark-2-2').project__bold Medidas Precisas: 
+                                span(data-section='disney' data-value='text-2-2')  Utilizar herramientas que permitan saber y aplicar las medidas precisas en cada elemento de diseño.
+                            li.project__item 
+                                mark(data-section='disney' data-value='mark-2-3').project__bold Captura de Elementos Visuales: 
+                                span(data-section='disney' data-value='text-2-3')  Utilizar extensiones para obtener imágenes e iconos específicos utilizados en el diseño, así como para identificar y aplicar los colores exactos de la página.
+                            li.project__item 
+                                mark(data-section='disney' data-value='mark-2-4').project__bold Mejora de la Organización: 
+                                span(data-section='disney' data-value='text-2-4') Aplica Autolayout para organizar de manera eficiente cada sección del diseño, incluyendo el banner principal.
+                            li.project__item 
+                                mark(data-section='disney' data-value='mark-2-5').project__bold Dinamismo Visual: 
+                                span(data-section='disney' data-value='text-2-5') Agrega slides horizontales a las cartas del banner principal y a las secciones para proporcionar una experiencia más atractiva y dinámica a los usuarios.
+
+                    section.project__section.project__section--illustrations 
+                        h2(data-section='disney' data-value='subtitle-3').project__subtitle Ilustraciones
+
+                        .project__illustrations
+                            .project__picture: img(src="../assets/img/project/figma/disney-draw-1.webp", alt="").project__img.project__img--vertical
+                            .project__picture: img(src="../assets/img/project/figma/disney-draw-2.webp", alt="").project__img.project__img--vertical
+                            .project__picture: img(src="../assets/img/project/figma/disney-draw-3.webp", alt="").project__img.project__img--vertical
+
+                            
+
+                    section.project__section 
+                        h2(data-section='disney' data-value='subtitle-4').project__subtitle Links de referencia
+
+                        ul.project__list 
+                            li.project__item 
+                                a(href="https://disney-plus-copycat.vercel.app/")  https://disney-plus-copycat.vercel.app/
+                    
+                .project__buttons
+                    a(href="https://www.figma.com/community/file/1293915803479359853/disney" target="_blank").project__button 
+                        span(data-section='buttons' data-value='button-1') Ver proyecto
+                        img(src="../assets/icons/view.svg", alt="").project__icon
+                    a(href="../assets/downloads/disney.zip" download).project__button 
+                        span(data-section='buttons' data-value='button-2') Descargar
+                        img(src="../assets/icons/download.svg", alt="").project__icon.project__icon--download

@@ -1,0 +1,49 @@
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin-top: var(--header-height);
+    background-color: var(--body-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    // color: var(--text-color);
+    color: #000;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    height: var(--header-height);
+    width: 100%;
+    background-color: #000;
+}
+
+strong {
+    font-weight: inherit
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: var(--font-medium);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    white-space: normal;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}

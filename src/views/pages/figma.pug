@@ -1,0 +1,77 @@
+extends ../templates/template
+
+block styleSheet
+    link(rel="stylesheet", href="./css/projects.css")
+block title
+    title(data-section='head' data-value='title-2') Portafolio - Figma
+
+block menu
+    -pageActive = 'Figma'
+    include ../includes/main-menu
+
+block contentWeb
+    //- <!--==================== TITLE ====================-->
+    section.title.title--figma 
+        h1.title__text Figma
+
+    //- <!--==================== TITLE ====================-->
+    .projects
+        .container
+            a(href="figma/futuristic.html").projects__card
+                article.projects__content
+                    h2(data-section='figma' data-value='title-1').projects__title Web Futurista
+                    p.projects__date 2023
+                
+                    ul.projects__list 
+                        li(data-section='figma' data-value='text-1-1').projects__item Medidas Precisas
+                        li(data-section='figma' data-value='text-1-2').projects__item Plugins Creativos
+                        li(data-section='figma' data-value='text-1-3').projects__item Eficiencia con Auto Layout
+                        li(data-section='figma' data-value='text-1-4').projects__item ...
+                picture
+                    source(media="(max-width: 1023px)", srcset="assets/img/projects/figma/futuristic-mb.webp")
+                    img(src="assets/img/projects/figma/futuristic-lp.webp", alt="").projects__img
+            
+                
+            a(href="figma/netflix.html").projects__card
+                article.projects__content
+                    h2(data-section='figma' data-value='title-2').projects__title Netflix 
+                    p.projects__date 2023
+
+                    ul.projects__list 
+                        li(data-section='figma' data-value='text-2-1').projects__item Diseñar en Figma
+                        li(data-section='figma' data-value='text-2-2').projects__item Aplicar Medidas Aproximadas
+                        li(data-section='figma' data-value='text-2-3').projects__item Capturar Elementos 
+                        li(data-section='figma' data-value='text-2-4').projects__item ...
+                picture
+                    source(media="(max-width: 1023px)", srcset="assets/img/projects/figma/netflix-mb.webp")
+                    img(src="assets/img/projects/figma/netflix-lp.webp", alt="").projects__img
+                
+
+            a(href="figma/prime.html").projects__card
+                article.projects__content
+                    h2(data-section='figma' data-value='title-3').projects__title Prime Video 
+                    p.projects__date 2023
+
+                    ul.projects__list 
+                        li(data-section='figma' data-value='text-3-1').projects__item Diseño en Figma
+                        li(data-section='figma' data-value='text-3-2').projects__item Medidas Precisas
+                        li(data-section='figma' data-value='text-3-3').projects__item Captura de Elementos Visuales
+                        li(data-section='figma' data-value='text-3-4').projects__item ...
+                picture
+                    source(media="(max-width: 1023px)", srcset="assets/img/projects/figma/prime-mb.webp")
+                    img(src="assets/img/projects/figma/prime-lp.webp", alt="").projects__img
+                
+            a(href="figma/disney.html").projects__card
+                article.projects__content
+                    h2(data-section='figma' data-value='title-4').projects__title Disney+
+                    p.projects__date 2023
+
+                    ul.projects__list 
+                        li(data-section='figma' data-value='text-4-1').projects__item Diseño en Figma 
+                        li(data-section='figma' data-value='text-4-2').projects__item Medidas Precisas 
+                        li(data-section='figma' data-value='text-4-3').projects__item Captura de Elementos Visuales
+                        li(data-section='figma' data-value='text-4-4').projects__item ...
+                picture
+                    source(media="(max-width: 1023px)", srcset="assets/img/projects/figma/disney-mb.webp")
+                    img(src="assets/img/projects/figma/disney-lp.webp", alt="").projects__img
+                

@@ -1,0 +1,29 @@
+each page, index in pages
+    if page == pageActive
+        li.main-menu__item
+            if index==0
+                a(data-section='main-menu' data-value=`item-${index + 1}` href="/portfolio").main-menu__link.active= page
+            else
+                a(data-section='main-menu' data-value=`item-${index + 1}` href=`/portfolio/${page.toLowerCase()}.html`).main-menu__link.active= page
+
+    else
+        li.main-menu__item
+            if index==0
+                a(data-section='main-menu' data-value=`item-${index + 1}` href="/portfolio").main-menu__link= page
+            else
+                a(data-section='main-menu' data-value=`item-${index + 1}` href=`/portfolio/${page.toLowerCase()}.html`).main-menu__link= page
+
+//- each page, index in pages
+//-     if page == pageActive
+//-         li.main-menu__item
+//-             if index==0
+//-                 a(data-section='main-menu' data-value=`item-${index + 1}` href="/").main-menu__link.active= page
+//-             else
+//-                 a(data-section='main-menu' data-value=`item-${index + 1}` href=`/${page.toLowerCase()}.html`).main-menu__link.active= page
+
+//-     else
+//-         li.main-menu__item
+//-             if index==0
+//-                 a(data-section='main-menu' data-value=`item-${index + 1}` href="/").main-menu__link= page
+//-             else
+//-                 a(data-section='main-menu' data-value=`item-${index + 1}` href=`/${page.toLowerCase()}.html`).main-menu__link= page

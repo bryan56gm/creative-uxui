@@ -1,0 +1,16 @@
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-block: .6rem;
+    border-bottom: 2px solid #000;
+    margin-bottom: 3rem;
+    font-size: 10px;
+
+    &--figma {
+        background: conic-gradient(at 50% 50%, #FFA63D, #FF4FD8, #FF4949, #FFA63D);
+    }
+
+    &--illustrator {
+        background: radial-gradient(circle, rgba(255, 173, 78, 1) 0%, rgba(148, 106, 67, 1) 100%);
+    }
+}

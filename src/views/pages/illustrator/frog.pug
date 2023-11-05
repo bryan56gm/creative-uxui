@@ -1,0 +1,65 @@
+extends ../../templates/template
+
+block styleSheet
+  link(rel="stylesheet", href="../css/project.css")
+block title
+    title(data-section='head' data-value='title-8') Illustrator - Rana
+
+block menu
+    -pageActive = 'Illustrator'
+    include ../../includes/main-menu
+
+block contentWeb
+    //- <!--==================== FROG ====================-->
+    .banner-project
+        picture
+            source(media="(max-width: 767px)", srcset="../assets/img/project/illustrator/frog-mb.webp")
+            img(src="../assets/img/project/illustrator/frog-lp.webp", alt="Banner picture").banner-project__img
+
+    section.project
+        .container
+            .project__card
+                .project__content
+                    h1(data-section='frog' data-value='title').project__title Rana
+
+                    section.project__section 
+                        h2(data-section='frog' data-value='subtitle-1').project__subtitle ¿Cómo empecé?
+                        ul.project__list
+                            li.project__item 
+                                mark(data-section='frog' data-value='mark-1-1').project__bold Aprendizaje Inicial: 
+                                span(data-section='frog' data-value='text-1-1') Iniciar el proceso de aprendizaje en este programa mediante la búsqueda de los mejores tutoriales para aprender y ponerlo en práctica.
+                    
+                    section.project__section 
+                        h2(data-section='frog' data-value='subtitle-2').project__subtitle Proceso
+                        ul.project__list 
+                            li.project__item 
+                                mark(data-section='frog' data-value='mark-2-1').project__bold Búsqueda y Descarga de Referencia: 
+                                span(data-section='frog' data-value='text-2-1')  Realizar una búsqueda de una imagen similar y descargarla como referencia.
+                            li.project__item 
+                                mark(data-section='frog' data-value='mark-2-2').project__bold Ajuste de Medidas y Bloqueo: 
+                                span(data-section='frog' data-value='text-2-2') Ajustar las medidas de la imagen al lienzo y bloquearla para trabajar el trazado sobre ella.
+                            li.project__item 
+                                mark(data-section='frog' data-value='mark-2-3').project__bold Trazado y Detalles: 
+                                span(data-section='frog' data-value='text-2-3') Utilizar diversas herramientas de dibujo para realizar el boceto y crear líneas más finas para los detalles.
+                            li.project__item 
+                                mark(data-section='frog' data-value='mark-2-4').project__bold Acentuación de Líneas: 
+                                span(data-section='frog' data-value='text-2-4')  Ajustar el grosor de ciertas líneas para resaltar el boceto.
+                    
+                    section.project__section.project__section--illustrations 
+                        h2(data-section='frog' data-value='subtitle-3').project__subtitle Ilustraciones
+                        .project__illustrations
+                            .project__picture: img(src="../assets/img/project/illustrator/frog-draw.webp", alt="").project__img.project__img--vertical
+                            
+                    section.project__section 
+                        h2(data-section='frog' data-value='subtitle-4').project__subtitle Links de referencia
+                        ul.project__list 
+                            li.project__item 
+                                a(href="https://youtu.be/MIZL4r2pEyM?si=CI8IDeewKky_E8D1&t=1235")  https://youtu.be/MIZL4r2pEyM?si=CI8IDeewKky_E8D1&t=1235
+                                
+                .project__buttons
+                    a(href="https://github.com/kevin-uxui/frog" target="_blank").project__button
+                        span(data-section='buttons' data-value='button-1') Ver proyecto
+                        img(src="../assets/icons/view.svg", alt="").project__icon
+                    a(href="http://github.com/kevin-uxui/frog/archive/refs/heads/main.zip").project__button 
+                        span(data-section='buttons' data-value='button-2') Descargar
+                        img(src="../assets/icons/download.svg", alt="").project__icon.project__icon--download

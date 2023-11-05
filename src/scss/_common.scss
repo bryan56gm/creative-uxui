@@ -1,0 +1,32 @@
+//Libraries
+
+
+//Mixins
+@import 'mixins/breakpoints';
+@import 'mixins/hover';
+@import 'mixins/reset-list';
+@import 'mixins/target-center';
+
+//Configuración guias de estilo
+@import 'config/colors';
+@import 'config/fonts';
+@import 'config/z-index';
+@import 'config/header-size';
+@import 'config/toggle';
+
+
+//Estilos base
+@import 'base/normalize';
+@import 'base/base';
+@import 'base/reusable';
+
+
+//Bloques
+/*----------- NAV ------------*/
+@import 'blocks/nav';
+@import 'blocks/main-menu';
+@import 'blocks/toggle-menu';
+@import 'blocks/language';
+
+/*----------- FOOTER ------------*/
+@import 'blocks/footer';

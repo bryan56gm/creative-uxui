@@ -1,0 +1,142 @@
+.project {
+    padding-bottom: 20px;
+
+    & .container {
+        @include mobile {
+            padding-inline: 15px;
+        }
+    }
+
+    &__card {
+        @include mobile-mx {
+            box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+
+            background-color: #EDEDEE;
+            border: 1px solid black;
+            border-radius: 10px;
+            max-width: 550px;
+            margin-inline: auto;
+        }
+    }
+
+    &__content {
+        padding: 45px 8% 0;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: bold;
+
+        @include tablet {
+            margin-bottom: 35px;
+        }
+
+        &--center {
+            text-align: center;
+        }
+    }
+
+    &__item {
+        margin-bottom: 10px;
+        line-height: 18px;
+
+        @include tablet {
+            margin-bottom: 15px;
+            line-height: 22px;
+        }
+    }
+
+    &__bold {
+        font-weight: bold;
+        background-color: transparent;
+    }
+
+    &__section {
+        margin-bottom: 3rem;
+
+        &--illustrations {
+            text-align: center;
+
+            @include mobile-mx {
+                display: none;
+            }
+        }
+    }
+
+    &__list {
+        padding-left: 8%;
+    }
+
+    &__illustrations {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 45px 20px;
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+        box-shadow: 0px 6px 10px black;
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+
+        &--vertical {
+            width: 250px;
+            height: 300px;
+        }
+
+        &--horizontal {
+            width: 360px;
+            height: 250px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 30px;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: end;
+        }
+    }
+
+    &__button {
+        background-color: var(--third-color);
+        padding: 10px 8px;
+        border-radius: 20px;
+        border: 2px solid black;
+        color: black;
+        font-weight: 600;
+        font-size: 14px;
+        width: max-content;
+
+        &:hover {
+            background-color: var(--third-color-alt);
+        }
+
+        @include tablet {
+            padding-inline: 12px;
+        }
+    }
+
+    &__icon {
+        width: 16px;
+        margin-left: 5px;
+
+        &--download {
+            vertical-align: middle;
+        }
+    }
+}

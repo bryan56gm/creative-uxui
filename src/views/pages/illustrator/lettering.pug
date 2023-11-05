@@ -1,0 +1,74 @@
+extends ../../templates/template
+
+block styleSheet
+  link(rel="stylesheet", href="../css/project.css")
+block title
+    title(data-section='head' data-value='title-10') Illustrator - Letras 3D
+
+block menu
+    -pageActive = 'Illustrator'
+    include ../../includes/main-menu
+
+block contentWeb
+    //- <!--==================== HERO ====================-->
+    .banner-project
+        picture
+            source(media="(max-width: 767px)", srcset="../assets/img/project/illustrator/lettering-mb.webp")
+            img(src="../assets/img/project/illustrator/lettering-lp.webp", alt="Banner picture").banner-project__img
+
+    section.project
+        .container
+            .project__card
+                .project__content
+                    h1(data-section='lettering' data-value='title').project__title Lettering 3D
+
+                    section.project__section 
+                        h2(data-section='lettering' data-value='subtitle-1').project__subtitle ¿Cómo empecé?
+                        
+                        ul.project__list
+                            li.project__item 
+                                mark(data-section='lettering' data-value='mark-1-1').project__bold Aprendizaje Continuo: 
+                                span(data-section='lettering' data-value='text-1-1')  Continuar el aprendizaje mediante la búsqueda y seguimiento de los mejores tutoriales para aprender y poner en práctica los conocimientos.
+                            li.project__item 
+                                mark(data-section='lettering' data-value='mark-1-2').project__bold Superar Limitaciones: 
+                                span(data-section='lettering' data-value='text-1-2')  Debido a las limitaciones del pack básico, utilizar las herramientas disponibles para lograrlo.
+                    
+                    section.project__section 
+                        h2(data-section='lettering' data-value='subtitle-2').project__subtitle Proceso
+
+                        ul.project__list 
+                            li.project__item 
+                                mark(data-section='lettering' data-value='mark-2-1').project__bold Crear Texto: 
+                                span(data-section='lettering' data-value='text-2-1')  Crear el contenido deseado utilizando la herramienta de texto y duplicarlo debajo.
+                            li.project__item 
+                                mark(data-section='lettering' data-value='mark-2-2').project__bold Cambiar Color y Posición: 
+                                span(data-section='lettering' data-value='text-2-2')  Cambiar el color y ajustar la capa inferior a la posición adecuada para crear un efecto de movimiento.
+                            li.project__item 
+                                mark(data-section='lettering' data-value='mark-2-3').project__bold Agregar Efecto 3D: 
+                                span(data-section='lettering' data-value='text-2-3')  Utilizar herramientas de dibujo para unir los extremos de los textos y darles un efecto tridimensional.
+                            li.project__item 
+                                mark(data-section='lettering' data-value='mark-2-4').project__bold Fondo Resaltado: 
+                                span(data-section='lettering' data-value='text-2-4')  En otra capa, crear un rectángulo que sirva como fondo para resaltar el contenido del texto.
+                    
+                    section.project__section.project__section--illustrations 
+                        h2(data-section='lettering' data-value='subtitle-3').project__subtitle Ilustraciones
+
+                        .project__illustrations
+                            .project__picture: img(src="../assets/img/project/illustrator/lettering-draw.webp", alt="").project__img.project__img--horizontal
+
+                            
+
+                    section.project__section 
+                        h2(data-section='lettering' data-value='subtitle-4').project__subtitle Links de referencia
+
+                        ul.project__list 
+                            li.project__item 
+                                a(href="https://youtu.be/a1yAfoKNXxU?si=85jyX4EGLGgasMZA&t=1310")  https://youtu.be/a1yAfoKNXxU?si=85jyX4EGLGgasMZA&t=1310
+                    
+                .project__buttons
+                    a(href="https://github.com/kevin-uxui/3d-lettering" target="_blank").project__button 
+                        span(data-section='buttons' data-value='button-1') Ver proyecto
+                        img(src="../assets/icons/view.svg", alt="").project__icon
+                    a(href="http://github.com/kevin-uxui/3d-lettering/archive/refs/heads/main.zip").project__button 
+                        span(data-section='buttons' data-value='button-2') Descargar
+                        img(src="../assets/icons/download.svg", alt="").project__icon.project__icon--download

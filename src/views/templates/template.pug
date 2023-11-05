@@ -1,0 +1,95 @@
+include ../config/menu
+doctype html
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    meta(name="description", content="Un impresionante portafolio web que destaca la creatividad y habilidades en diseño gráfico UX/UI utilizando herramientas como Figma e Illustrator para crear experiencias visuales cautivadoras y funcionales.")
+    meta(name="keywords", content="UX, UI, Design, Illustrator, Figma, Graphic")
+
+    meta(name="author" content="Bryan56gm")
+    meta(name="copyright" content="Copyright bryan56gm & Kevin-uxui")
+
+    //- <!--=============== TITLE ===============-->
+    block title
+    //- <!--=============== FAVICON ===============-->
+    link(rel="shortcut icon" href="/portfolio/assets/favicon.png" type="image/x-icon")
+    //- <!--=============== CSS ===============-->
+    block styleSheet
+
+  body
+    //- <!--========== HEADER ==========-->
+    header
+      #header.header
+        nav.nav.container.bg-container
+          a(href="/portfolio").nav__logo
+            img(src="/portfolio/assets/icons/logo.svg", alt="Logo Kevin Designs")
+              
+          ul#main-menu.main-menu
+            block menu
+
+          #toggle-menu.toggle-menu
+            .toggle-menu__icon
+
+          .language
+            img( src="/portfolio/assets/icons/flag-spn.svg", alt="Flag Spain")#flag.language__img
+            span(data-section='language' data-value='current').language__span  Esp
+            img(src="/portfolio/assets/icons/dropdown.svg", alt="Row icon").language__row
+            
+            ul#main-menu-language.language__menu
+              li(data-language='es').language__item 
+                img(src="/portfolio/assets/icons/flag-spn.svg", alt="Flag Spain").language__flags
+                span(data-section='language' data-value='item-1').language__text Esp
+              li(data-language='en').language__item
+                img(src="/portfolio/assets/icons/flag-eng.svg", alt="Flag Spain").language__flags
+                span(data-section='language' data-value='item-2').language__text Ing
+
+    //- <!--========== MAIN ==========-->
+    main#main.main
+        block contentWeb
+
+    //- <!--========== FOOTER ==========-->
+    footer.footer
+      .container
+        .footer__item
+          a(href="/portfolio").footer__logo: img(src="/portfolio/assets/icons/logo.svg", alt="").footer__logo-img
+          .footer__copys.footer__copys--up
+            p(data-section='footer' data-value='copy-1').footer__copy © 2023 Kevin-uxui - Diseño
+            p(data-section='footer' data-value='copy-2').footer__copy © 2023 Bryann56gm - Programación
+        
+        .footer__item
+          h2(data-section='footer' data-value='title-1').footer__title Links 
+          a(href="/portfolio/" data-section='footer' data-value='link-1').footer__links Inicio 
+          a(href="/portfolio/figma.html" data-section='footer' data-value='link-2').footer__links Figma 
+          a(href="/portfolio/illustrator.html" data-section='footer' data-value='link-3').footer__links Illustrator 
+
+        .footer__item
+          h2(data-section='footer' data-value='title-2').footer__title Contacto 
+          a(href="tel:+34601167833" title="Llamar").footer__links 
+            img(src="/portfolio/assets/icons/phone.svg", alt="").footer__icon.footer__icon--phone
+            | (+34) 601 16 78 33 
+
+          a(href="mailto:kevin.ux.ui@hotmail.com" title="Escribir").footer__links  
+            img(src="/portfolio/assets/icons/mail.svg", alt="").footer__icon
+            | kevin.ux.ui@hotmail.com
+
+          .footer__social
+            a(href="https://www.figma.com/@kevinuxui" target="_blank").footer__social-link
+              img(src="/portfolio/assets/icons/figma-footer.svg", alt="Icono Figma").footer__icon.footer__icon--social
+            a(href="https://github.com/kevin-uxui" target="_blank").footer__social-link
+              img(src="/portfolio/assets/icons/github-footer.svg", alt="Icono GitHub").footer__icon.footer__icon--social
+            a(href="https://www.linkedin.com/in/kevin-uxui/" target="_blank").footer__social-link
+              img(src="/portfolio/assets/icons/linkedin-footer.svg", alt="Icono Linkedin").footer__icon.footer__icon--social
+            a(href="https://www.instagram.com/kevin_uxui/" target="_blank").footer__social-link
+              img(src="/portfolio/assets/icons/instagram-footer.svg", alt="Icono Instagram").footer__icon.footer__icon--social
+        
+        .footer__item.footer__copys--down
+          p(data-section='footer' data-value='copy-1').footer__copy © 2023 Kevin-uxui - Diseño
+          p(data-section='footer' data-value='copy-2').footer__copy © 2023 Bryann56gm - Programación
+
+    //- <!--=============== MAIN JS ===============-->
+    script(src="/portfolio/js/scripts-min.js")    
+    //- script(src="/js/scripts-min.js")    
+

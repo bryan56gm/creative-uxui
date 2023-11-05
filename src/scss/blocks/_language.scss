@@ -1,0 +1,77 @@
+.language {
+    position: relative;
+    display: flex;
+    column-gap: 2px;
+    padding: 5px;
+    align-items: center;
+    border: 1px solid white;
+    cursor: pointer;
+
+    @include mobile-mx {
+        order: -1;
+    }
+
+    &__img {
+        display: block;
+        height: 15px;
+
+        @include mobile-mx {
+            height: 14px;
+        }
+    }
+
+    &__span {
+        color: aliceblue;
+        font-size: 15px;
+
+        @include mobile-mx {
+            font-size: 12px;
+        }
+    }
+
+    &__row {
+        width: 10px;
+        // padding-bottom: 1.8px;
+
+        @include mobile-mx {
+            width: 8px;
+        }
+    }
+
+    &__menu {
+        position: absolute;
+        top: 100%;
+        left: -1px;
+        background-color: rgba(235, 229, 229, 0.8);
+        padding: 10px 0;
+        display: none;
+        margin-block: 0;
+    }
+
+    &:hover &__menu {
+        display: block;
+    }
+
+    &__flags {
+        line-height: 0;
+        height: 15px;
+        padding-right: 5px;
+
+    }
+
+    &__text {
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+
+    &__item {
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        padding: 8px;
+    }
+
+    &__item:hover {
+        background-color: rgba(153, 148, 148, .7);
+    }
+}

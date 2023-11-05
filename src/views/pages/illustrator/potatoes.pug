@@ -1,0 +1,65 @@
+extends ../../templates/template
+
+block styleSheet
+  link(rel="stylesheet", href="../css/project.css")
+block title
+    title(data-section='head' data-value='title-11') Illustrator - Patatas
+
+block menu
+    -pageActive = 'Illustrator'
+    include ../../includes/main-menu
+
+block contentWeb
+    //- <!--==================== HERO ====================-->
+    .banner-project
+        picture
+            source(media="(max-width: 767px)", srcset="../assets/img/project/illustrator/potatoes-mb.webp")
+            img(src="../assets/img/project/illustrator/potatoes-lp.webp", alt="Banner picture").banner-project__img
+
+    section.project
+        .container
+            .project__card
+                .project__content
+                    h1(data-section='potatoes' data-value='title').project__title Patatas
+
+                    section.project__section 
+                        h2(data-section='potatoes' data-value='subtitle-1').project__subtitle ¿Cómo empecé?
+                        
+                        ul.project__list
+                            li.project__item 
+                                mark(data-section='potatoes' data-value='mark-1-1').project__bold Aprendizaje Continuo: 
+                                span(data-section='potatoes' data-value='text-1-1')  Continuar el aprendizaje mediante la búsqueda y seguimiento de los mejores tutoriales para aprender y poner en práctica los conocimientos.
+                    
+                    section.project__section 
+                        h2(data-section='potatoes' data-value='subtitle-2').project__subtitle Proceso
+
+                        ul.project__list 
+                            li.project__item 
+                                mark(data-section='potatoes' data-value='mark-2-1').project__bold Creación y Transformación: 
+                                span(data-section='potatoes' data-value='text-2-1') Utilizar diversas herramientas de dibujo para crear el trazado y aplicar otras que permitan deformar el objeto en la Capa 1.
+                            li.project__item 
+                                mark(data-section='potatoes' data-value='mark-2-2').project__bold Color y Detalles: 
+                                span(data-section='potatoes' data-value='text-2-2') Crear una nueva Capa 2 para trabajar en el color y los acabados, incluyendo sombreado, utilizando diferentes herramientas de formas.
+                    
+                    section.project__section.project__section--illustrations 
+                        h2(data-section='potatoes' data-value='subtitle-3').project__subtitle Ilustraciones
+
+                        .project__illustrations
+                            .project__picture: img(src="../assets/img/project/illustrator/potatoes-draw.webp", alt="").project__img.project__img--vertical
+
+                            
+
+                    section.project__section 
+                        h2(data-section='potatoes' data-value='subtitle-4').project__subtitle Links de referencia
+
+                        ul.project__list 
+                            li.project__item 
+                                a(href="https://youtu.be/sekxanyTmGM?si=sYrlkWELKqdt0938&t=715")  https://youtu.be/sekxanyTmGM?si=sYrlkWELKqdt0938&t=715
+                    
+                .project__buttons
+                    a(href="https://github.com/kevin-uxui/potatoes" target="_blank").project__button 
+                        span(data-section='buttons' data-value='button-1') Ver proyecto
+                        img(src="../assets/icons/view.svg", alt="").project__icon
+                    a(href="http://github.com/kevin-uxui/potatoes/archive/refs/heads/main.zip").project__button 
+                        span(data-section='buttons' data-value='button-2') Descargar
+                        img(src="../assets/icons/download.svg", alt="").project__icon.project__icon--download

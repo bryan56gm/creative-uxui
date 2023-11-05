@@ -1,0 +1,82 @@
+extends ../../templates/template
+
+block styleSheet
+  link(rel="stylesheet", href="../css/project.css")
+block title
+    title(data-section='head' data-value='title-7') Figma - Prime Video
+
+block menu
+    -pageActive = 'Figma'
+    include ../../includes/main-menu
+
+block contentWeb
+    //- <!--==================== HERO ====================-->
+    .banner-project
+        picture
+            source(media="(max-width: 767px)", srcset="../assets/img/project/figma/prime-mb.webp")
+            img(src="../assets/img/project/figma/prime-lp.webp", alt="Banner picture").banner-project__img
+
+    section.project
+        .container
+            .project__card
+                .project__content
+                    h1(data-section='prime' data-value='title').project__title Prime Video
+
+                    section.project__section 
+                        h2(data-section='prime' data-value='subtitle-1').project__subtitle ¿Cómo empecé?
+                        
+                        ul.project__list
+                            li.project__item 
+                                mark(data-section='prime' data-value='mark-1-1').project__bold Objetivo Inspirador: 
+                                span(data-section='prime' data-value='text-1-1') Realizar un proyecto con el objetivo de crear una réplica de las mejores plataformas de streaming.
+                            li.project__item 
+                                mark(data-section='prime' data-value='mark-1-2').project__bold Acceso desde Dentro: 
+                                span(data-section='prime' data-value='text-1-2') Aprovechar mi condición de usuario, para poder acceder a la aplicación original y trabajar desde allí.
+                    
+                    section.project__section 
+                        h2(data-section='prime' data-value='subtitle-2').project__subtitle Proceso
+
+                        ul.project__list 
+                            li.project__item 
+                                mark(data-section='prime' data-value='mark-2-1').project__bold Diseño en Figma: 
+                                span(data-section='prime' data-value='text-2-1') Crear la estructura inicial mediante  Figma, realizando un estructuración de los elementos y contenido.
+                            li.project__item 
+                                mark(data-section='prime' data-value='mark-2-2').project__bold Medidas Precisas: 
+                                span(data-section='prime' data-value='text-2-2') Utilizar herramientas que me permitan conocer y aplicar las medidas precisas.
+                            li.project__item 
+                                mark(data-section='prime' data-value='mark-2-3').project__bold Captura de Elementos Visuales: 
+                                span(data-section='prime' data-value='text-2-3') Utilizar extenciones para conseguir algunas imágenes e iconos utilizados en el diseño y obtener los colores exactos de la página.
+                            li.project__item 
+                                mark(data-section='prime' data-value='mark-2-4').project__bold Búsqueda Manual de Recursos: 
+                                span(data-section='prime' data-value='text-2-4') Para el resto de las imágenes, se realizó descarguas manualmente.
+                            li.project__item 
+                                mark(data-section='prime' data-value='mark-2-5').project__bold Mejora de la Organización: 
+                                span(data-section='prime' data-value='text-2-5') Aplicar Autolayout, para organizar mejor cada sección, incluyendo el banner.
+                            li.project__item 
+                                mark(data-section='prime' data-value='mark-2-6').project__bold Dinamismo Visual: 
+                                span(data-section='prime' data-value='text-2-6') Implementar slides horizontales a las cartas del banner principal y de las secciones para una experiencia más atractiva.
+                    
+                    section.project__section.project__section--illustrations 
+                        h2(data-section='prime' data-value='subtitle-3').project__subtitle Ilustraciones
+
+                        .project__illustrations
+                            .project__picture: img(src="../assets/img/project/figma/prime-draw-1.webp", alt="").project__img.project__img--vertical
+                            .project__picture: img(src="../assets/img/project/figma/prime-draw-2.webp", alt="").project__img.project__img--vertical
+                            .project__picture: img(src="../assets/img/project/figma/prime-draw-3.webp", alt="").project__img.project__img--vertical
+
+                            
+
+                    section.project__section 
+                        h2(data-section='prime' data-value='subtitle-4').project__subtitle Links de referencia
+
+                        ul.project__list 
+                            li.project__item 
+                                a(href="https://www.primevideo.com/")  https://www.primevideo.com/
+                    
+                .project__buttons
+                    a(href="https://www.figma.com/community/file/1293917468631728498/prime-video" target="_blank").project__button
+                        span(data-section='buttons' data-value='button-1') Ver proyecto
+                        img(src="../assets/icons/view.svg", alt="").project__icon
+                    a(href="../assets/downloads/prime-video.zip" download).project__button
+                        span(data-section='buttons' data-value='button-2') Descargar
+                        img(src="../assets/icons/download.svg", alt="").project__icon.project__icon--download

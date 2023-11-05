@@ -1,0 +1,74 @@
+extends ../templates/template
+
+block styleSheet
+    link(rel="stylesheet", href="./css/projects.css")
+block title
+    title(data-section='head' data-value='title-3') Portafolio - Illustrator
+
+block menu
+    -pageActive = 'Illustrator'
+    include ../includes/main-menu
+
+block contentWeb
+    //- <!--==================== TITLE ====================-->
+    section.title.title--illustrator
+        h1.title__text Illustrator   
+
+    .projects
+        .container
+            a(href="illustrator/frog.html").projects__card
+                article.projects__content
+                    h2(data-section='illustrator' data-value='title-1').projects__title Rana 
+                    p.projects__date 2023
+                
+                    ul.projects__list 
+                        li(data-section='illustrator' data-value='text-1-1').projects__item Búsqueda y Descarga de Referencia
+                        li(data-section='illustrator' data-value='text-1-2').projects__item Ajuste de Medidas y Bloqueo
+                        li(data-section='illustrator' data-value='text-1-3').projects__item Trazado y Detalles
+                        li(data-section='illustrator' data-value='text-1-4').projects__item ...
+                picture
+                    source(media="(max-width: 1023px)", srcset="assets/img/projects/illustrator/frog-mb.webp")
+                    img(src="assets/img/projects/illustrator/frog-lp.webp", alt="").projects__img
+                
+
+            a(href="illustrator/potatoes.html").projects__card
+                article.projects__content
+                    h2(data-section='illustrator' data-value='title-2').projects__title Patatas 
+                    p.projects__date 2023
+                
+                    ul.projects__list 
+                        li(data-section='illustrator' data-value='text-2-1').projects__item Creación y Transformación
+                        li(data-section='illustrator' data-value='text-2-2').projects__item Color y Detalles
+                picture
+                    source(media="(max-width: 1023px)", srcset="assets/img/projects/illustrator/potatoes-mb.webp")
+                    img(src="assets/img/projects/illustrator/potatoes-lp.webp", alt="").projects__img
+
+
+            a(href="illustrator/lemon.html").projects__card
+                article.projects__content
+                    h2(data-section='illustrator' data-value='title-3').projects__title Limones 
+                    p.projects__date 2023
+                
+                    ul.projects__list 
+                        li(data-section='illustrator' data-value='text-3-1').projects__item Descarga y Ajuste
+                        li(data-section='illustrator' data-value='text-3-2').projects__item Trazado y Detalles
+                        li(data-section='illustrator' data-value='text-3-3').projects__item Ajustar Grosor
+                        li(data-section='illustrator' data-value='text-3-4').projects__item ...
+                picture
+                    source(media="(max-width: 1023px)", srcset="assets/img/projects/illustrator/lemon-mb.webp")
+                    img(src="assets/img/projects/illustrator/lemon-lp.webp", alt="").projects__img
+
+
+            a(href="illustrator/lettering.html").projects__card
+                article.projects__content
+                    h2(data-section='illustrator' data-value='title-4').projects__title Letras 3D 
+                    p.projects__date 2023
+                
+                    ul.projects__list 
+                        li(data-section='illustrator' data-value='text-4-1').projects__item Crear Texto 
+                        li(data-section='illustrator' data-value='text-4-2').projects__item Cambiar Color y Posición 
+                        li(data-section='illustrator' data-value='text-4-3').projects__item Agregar Efecto 3D
+                        li(data-section='illustrator' data-value='text-4-4').projects__item ...
+                picture
+                    source(media="(max-width: 1023px)", srcset="assets/img/projects/illustrator/lettering-mb.webp")
+                    img(src="assets/img/projects/illustrator/lettering-lp.webp", alt="").projects__img

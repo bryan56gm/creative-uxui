@@ -1,0 +1,143 @@
+.footer {
+    background-color: var(--firts-color);
+    padding-block: 3rem;
+    margin-top: 5rem;
+
+    .container {
+        @include mobile-mx {
+            padding-inline: .8rem;
+        }
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2.5rem 1rem;
+
+
+
+
+        @media screen and (min-width: 450px) {
+            column-gap: 2rem;
+            align-items: center;
+            justify-content: space-around;
+
+
+        }
+
+        @include tablet {
+            justify-content: space-between;
+        }
+    }
+
+    &__item {
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        row-gap: .9rem;
+    }
+
+    &__item:first-child {
+        @include mobile-mx {
+            width: 100%;
+        }
+    }
+
+    &__logo {
+        width: 150px;
+        margin-inline: auto;
+
+        @include tablet {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__logo-img {
+        width: 100%;
+    }
+
+    &__copys {
+        &--up {
+            display: none;
+            font-size: 13px;
+
+            @include tablet {
+                display: block;
+            }
+        }
+
+        display: block;
+        margin-inline: auto;
+
+        &--down {
+            font-size: 14px;
+            margin-inline: auto;
+            row-gap: .2rem;
+
+            @include tablet {
+                display: none;
+            }
+        }
+    }
+
+    &__copy {
+        margin: 0;
+
+        &:first-child {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__title {
+        text-decoration: underline;
+        font-size: 18px;
+    }
+
+    &__links {
+        color: aliceblue;
+        margin: 0;
+        font-size: .8rem;
+
+        @include mobile {
+            font-size: .9rem;
+        }
+
+        @include hover {
+
+            &:hover .footer__icon {
+                transform: translateX(-7px);
+            }
+        }
+    }
+
+    &__icon {
+        transition: transform .8s ease;
+        margin-right: .4rem;
+        width: 15px;
+
+        &--phone {
+            width: 12px;
+        }
+
+        &--social {
+            width: 17px;
+        }
+    }
+
+
+    &__social {
+        display: flex;
+        column-gap: 5px;
+    }
+
+    &__social-link {
+        display: inline-block;
+
+        @include hover {
+            transition: transform .8s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+    }
+}
