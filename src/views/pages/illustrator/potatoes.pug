@@ -12,9 +12,8 @@ block menu
 block contentWeb
     //- <!--==================== HERO ====================-->
     .banner-project
-        picture
-            source(media="(max-width: 767px)", srcset="../assets/img/project/illustrator/potatoes-mb.webp")
-            img(src="../assets/img/project/illustrator/potatoes-lp.webp", alt="Banner picture").banner-project__img
+        .banner-project__picture
+            img(src="../assets/img/project/illustrator/potatoes.svg", alt="Banner picture").banner-project__illustrator.banner-project__illustrator--potatoes
 
     section.project
         .container
@@ -45,7 +44,7 @@ block contentWeb
                         h2(data-section='potatoes' data-value='subtitle-3').project__subtitle Ilustraciones
 
                         .project__illustrations
-                            .project__picture: img(src="../assets/img/project/illustrator/potatoes-draw.webp", alt="").project__img.project__img--vertical
+                            .project__picture: img(src="../assets/img/project/illustrator/potatoes-draw.webp", alt="Potatoes draw").project__img.project__img--vertical
 
                             
 
@@ -59,7 +58,7 @@ block contentWeb
                 .project__buttons
                     a(href="https://github.com/kevin-uxui/potatoes" target="_blank").project__button 
                         span(data-section='buttons' data-value='button-1') Ver proyecto
-                        img(src="../assets/icons/view.svg", alt="").project__icon
+                        img(src="../assets/icons/view.svg", alt="View icon").project__icon
                     a(href="http://github.com/kevin-uxui/potatoes/archive/refs/heads/main.zip").project__button 
                         span(data-section='buttons' data-value='button-2') Descargar
-                        img(src="../assets/icons/download.svg", alt="").project__icon.project__icon--download
+                        img(src="../assets/icons/download.svg", alt="Download icon").project__icon.project__icon--download

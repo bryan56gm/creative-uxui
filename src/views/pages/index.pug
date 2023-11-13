@@ -15,7 +15,9 @@ block contentWeb
         //- <!--==================== BANNER ====================-->
         section.banner
             .container
-                img(src="assets/img/sisi.png", alt="Profile picture").banner__img
+                picture
+                    source(media="(max-width: 767px)", srcset="assets/img/home/avatar-mb.png")
+                    img(src="assets/img/home/avatar-lp.png", alt="Banner picture").banner__img
                 .banner__content
                     h1.banner__title
                         span.banner__bold Kevin 
@@ -43,19 +45,19 @@ block contentWeb
 
                         .skills__contact-links
                             a(href="https://www.figma.com/@kevinuxui" target="_blank").skills__contact-link
-                                img(src="assets/icons/figma.svg", alt="").skills__contact-icon.skills__contact-icon--figma
+                                img(src="assets/icons/figma.svg", alt="Figma icon").skills__contact-icon.skills__contact-icon--figma
                                 span Figma 
                             a(href="https://github.com/kevin-uxui" target="_blank").skills__contact-link
-                                img(src="assets/icons/github.svg", alt="").skills__contact-icon 
+                                img(src="assets/icons/github.svg", alt="Github icon").skills__contact-icon 
                                 span GitHub 
                             a(href="https://www.linkedin.com/in/kevin-uxui/" target="_blank").skills__contact-link
-                                img(src="assets/icons/linkedin.svg", alt="").skills__contact-icon 
+                                img(src="assets/icons/linkedin.svg", alt="Linkedin icon").skills__contact-icon 
                                 span Linkedin 
                             a(href="https://www.instagram.com/kevin_uxui/" target="_blank").skills__contact-link
-                                img(src="assets/icons/instragram.svg", alt="").skills__contact-icon 
+                                img(src="assets/icons/instragram.svg", alt="Instagram icon").skills__contact-icon 
                                 span Instagram 
-                            a(href="#" target="_blank").skills__contact-link
-                                img(src="assets/icons/pdf.svg", alt="").skills__contact-icon 
+                            a(href="assets/downloads/kevin-cv-uxui.pdf" download).skills__contact-link
+                                img(src="assets/icons/pdf.svg", alt="PDF icon").skills__contact-icon 
                                 span CV
                     
                     .skills__languages.skills__grid-item 
@@ -78,19 +80,19 @@ block contentWeb
             article.main-projects__card
                 a(href="./figma.html").main-projects__data.main-projects__data--figma 
                     .main-projects__icon
-                        img(src="assets/img/Intersect.svg", alt="")
+                        img(src="assets/icons/projects-figma.svg", alt="Figma icon")
                     h3.main-projects__title Figma
 
                 .swiper.main-projects__swiper#swiper-figma
                     .swiper-wrapper
                         .swiper-slide
-                            img(src="assets/img/home/projects-disney.webp", alt="").main-projects__img
+                            img(src="assets/img/home/projects-disney.webp", alt="Disney+").main-projects__img
                         .swiper-slide
-                            img(src="assets/img/home/projects-futuristic.webp", alt="").main-projects__img
+                            img(src="assets/img/home/projects-futuristic.webp", alt="Futuristic web").main-projects__img
                         .swiper-slide
-                            img(src="assets/img/home/projects-netflix.webp", alt="").main-projects__img
+                            img(src="assets/img/home/projects-netflix.webp", alt="Netflix").main-projects__img
                         .swiper-slide
-                            img(src="assets/img/home/projects-prime.webp", alt="").main-projects__img
+                            img(src="assets/img/home/projects-prime.webp", alt="Prime Video").main-projects__img
                     
                     .swiper-button-next
                     .swiper-button-prev
@@ -98,19 +100,19 @@ block contentWeb
             article.main-projects__card
                 a(href="./illustrator.html").main-projects__data.main-projects__data--illustrator 
                     .main-projects__icon
-                        img(src="assets/icons/projects-illustrator.svg", alt="")
+                        img(src="assets/icons/projects-illustrator.svg", alt="Illustrator icon")
                     h3.main-projects__title Illustrator
 
                 .swiper.main-projects__swiper#swiper-illustrator
                     .swiper-wrapper
                         .swiper-slide
-                            img(src="assets/img/home/projects-frog.webp", alt="").main-projects__img
+                            img(src="assets/img/home/projects-frog.webp", alt="Frog").main-projects__img
                         .swiper-slide
-                            img(src="assets/img/home/projects-potatoes.webp", alt="").main-projects__img
+                            img(src="assets/img/home/projects-potatoes.webp", alt="Potatoes").main-projects__img
                         .swiper-slide
-                            img(src="assets/img/home/projects-lemon.webp", alt="").main-projects__img
+                            img(src="assets/img/home/projects-lemon.webp", alt="Lemons").main-projects__img
                         .swiper-slide
-                            img(src="assets/img/home/projects-lettering.webp", alt="").main-projects__img
+                            img(src="assets/img/home/projects-lettering.webp", alt="Lettering 3D").main-projects__img
                     
                     .swiper-button-next
                     .swiper-button-prev
@@ -129,10 +131,10 @@ block contentWeb
             .swiper.about__swiper
                 .swiper-wrapper
                     .swiper-slide
-                        img(src="assets/img/home/about-social.webp", alt="").about__img
+                        img(src="assets/img/home/about-social.webp", alt="Social media mockup").about__img
                     .swiper-slide
-                        img(src="assets/img/home/about-t-shirt.webp", alt="").about__img
+                        img(src="assets/img/home/about-t-shirt.webp", alt="T-shit mockup").about__img
                     .swiper-slide
-                        img(src="assets/img/home/about-book.webp", alt="").about__img
+                        img(src="assets/img/home/about-book.webp", alt="Book mockup").about__img
 
                 .swiper-pagination

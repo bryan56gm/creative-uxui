@@ -3,7 +3,7 @@ extends ../../templates/template
 block styleSheet
   link(rel="stylesheet", href="../css/project.css")
 block title
-    title(data-section='head' data-value='title-4') Figma - Disney
+    title(data-section='head' data-value='title-4') Figma - Disney+
 
 block menu
     -pageActive = 'Figma'
@@ -12,9 +12,9 @@ block menu
 block contentWeb
     //- <!--==================== HERO ====================-->
     .banner-project
-        picture
+        picture.banner-project__picture
             source(media="(max-width: 767px)", srcset="../assets/img/project/figma/disney-mb.webp")
-            img(src="../assets/img/project/figma/disney-lp.webp", alt="Banner picture").banner-project__img
+            img(src="../assets/img/project/figma/disney-lp.webp", alt="Banner picture").banner-project__figma
 
     section.project
         .container
@@ -57,9 +57,9 @@ block contentWeb
                         h2(data-section='disney' data-value='subtitle-3').project__subtitle Ilustraciones
 
                         .project__illustrations
-                            .project__picture: img(src="../assets/img/project/figma/disney-draw-1.webp", alt="").project__img.project__img--vertical
-                            .project__picture: img(src="../assets/img/project/figma/disney-draw-2.webp", alt="").project__img.project__img--vertical
-                            .project__picture: img(src="../assets/img/project/figma/disney-draw-3.webp", alt="").project__img.project__img--vertical
+                            .project__picture: img(src="../assets/img/project/figma/disney-draw-1.webp", alt="Disney+ draw").project__img.project__img--vertical
+                            .project__picture: img(src="../assets/img/project/figma/disney-draw-2.webp", alt="Disney+ draw").project__img.project__img--vertical
+                            .project__picture: img(src="../assets/img/project/figma/disney-draw-3.webp", alt="Disney+ draw").project__img.project__img--vertical
 
                             
 
@@ -73,7 +73,7 @@ block contentWeb
                 .project__buttons
                     a(href="https://www.figma.com/community/file/1293915803479359853/disney" target="_blank").project__button 
                         span(data-section='buttons' data-value='button-1') Ver proyecto
-                        img(src="../assets/icons/view.svg", alt="").project__icon
+                        img(src="../assets/icons/view.svg", alt="View icon").project__icon
                     a(href="../assets/downloads/disney.zip" download).project__button 
                         span(data-section='buttons' data-value='button-2') Descargar
-                        img(src="../assets/icons/download.svg", alt="").project__icon.project__icon--download
+                        img(src="../assets/icons/download.svg", alt="Download icon").project__icon.project__icon--download

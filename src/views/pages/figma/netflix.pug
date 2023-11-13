@@ -12,10 +12,10 @@ block menu
 block contentWeb
     //- <!--==================== HERO ====================-->
     .banner-project
-        picture
+        picture.banner-project__picture
             source(media="(max-width: 767px)", srcset="../assets/img/project/figma/netflix-mb.webp")
-            img(src="../assets/img/project/figma/netflix-lp.webp", alt="Banner picture").banner-project__img
-
+            img(src="../assets/img/project/figma/netflix-lp.webp", alt="Banner picture").banner-project__figma
+        
     section.project
         .container
             .project__card
@@ -57,8 +57,8 @@ block contentWeb
                         h2(data-section='netflix' data-value='subtitle-3').project__subtitle Ilustraciones
 
                         .project__illustrations
-                            .project__picture: img(src="../assets/img/project/figma/netflix-draw-1.webp", alt="").project__img.project__img--vertical
-                            .project__picture: img(src="../assets/img/project/figma/netflix-draw-2.webp", alt="").project__img.project__img--vertical
+                            .project__picture: img(src="../assets/img/project/figma/netflix-draw-1.webp", alt="Netflix draw").project__img.project__img--vertical
+                            .project__picture: img(src="../assets/img/project/figma/netflix-draw-2.webp", alt="Netflix draw").project__img.project__img--vertical
 
                             
 
@@ -72,7 +72,7 @@ block contentWeb
                 .project__buttons
                     a(href="https://www.figma.com/community/file/1293918736436817268/netflix" target="_blank").project__button
                         span(data-section='buttons' data-value='button-1') Ver proyecto
-                        img(src="../assets/icons/view.svg", alt="").project__icon
+                        img(src="../assets/icons/view.svg", alt="View icon").project__icon
                     a(href="../assets/downloads/netflix.zip" download).project__button
                         span(data-section='buttons' data-value='button-2') Descargar
-                        img(src="../assets/icons/download.svg", alt="").project__icon.project__icon--download
+                        img(src="../assets/icons/download.svg", alt="Download icon").project__icon.project__icon--download

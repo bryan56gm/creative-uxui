@@ -12,9 +12,9 @@ block menu
 block contentWeb
     //- <!--==================== FROG ====================-->
     .banner-project
-        picture
-            source(media="(max-width: 767px)", srcset="../assets/img/project/illustrator/frog-mb.webp")
-            img(src="../assets/img/project/illustrator/frog-lp.webp", alt="Banner picture").banner-project__img
+       .banner-project__picture
+            img(src="../assets/img/project/illustrator/frog.svg", alt="Banner picture").banner-project__illustrator.banner-project__illustrator--frog
+            img(src="../assets/img/project/illustrator/frog.svg", alt="Banner picture").banner-project__illustrator.banner-project__illustrator--frog-two
 
     section.project
         .container
@@ -48,7 +48,7 @@ block contentWeb
                     section.project__section.project__section--illustrations 
                         h2(data-section='frog' data-value='subtitle-3').project__subtitle Ilustraciones
                         .project__illustrations
-                            .project__picture: img(src="../assets/img/project/illustrator/frog-draw.webp", alt="").project__img.project__img--vertical
+                            .project__picture: img(src="../assets/img/project/illustrator/frog-draw.webp", alt="Futuristib web draw").project__img.project__img--vertical
                             
                     section.project__section 
                         h2(data-section='frog' data-value='subtitle-4').project__subtitle Links de referencia
@@ -59,7 +59,7 @@ block contentWeb
                 .project__buttons
                     a(href="https://github.com/kevin-uxui/frog" target="_blank").project__button
                         span(data-section='buttons' data-value='button-1') Ver proyecto
-                        img(src="../assets/icons/view.svg", alt="").project__icon
+                        img(src="../assets/icons/view.svg", alt="View icon").project__icon
                     a(href="http://github.com/kevin-uxui/frog/archive/refs/heads/main.zip").project__button 
                         span(data-section='buttons' data-value='button-2') Descargar
-                        img(src="../assets/icons/download.svg", alt="").project__icon.project__icon--download
+                        img(src="../assets/icons/download.svg", alt="Download icon").project__icon.project__icon--download

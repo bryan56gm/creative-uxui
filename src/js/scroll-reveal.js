@@ -18,7 +18,6 @@ ScrollReveal().reveal('.projects__card', {
   duration: 2500,
   opacity: 0,
   distance: "60%",
-  // easing: 'cubic-bezier(0.5, 0, 0, 1)',
 });
 
 ScrollReveal().reveal('.projects__card:nth-child(odd)', {
@@ -36,50 +35,18 @@ ScrollReveal().reveal('.project__card', {
   distance: "60%",
 });
 
-  // ScrollReveal().reveal('.home__img', {
-  //   duration: 5000,
-  //   origin: 'left',
-  //   distance: '30%'
-  // });
-  
-  // ScrollReveal().reveal('.main-services__data', {
-  //   duration: 5000
-  // });
 
-  // ScrollReveal().reveal('.description__content', {
-  //   origin: 'left',
-  //   distance: '30%',
-  //   scale: 0.5,
-  //   duration: 4000
-  // });
+ScrollReveal().reveal('.banner-project__figma', {
+  duration: 3000,
+  origin: 'left',
+  distance: '50%',
+  opacity: .8
+});
 
-  // ScrollReveal().reveal('.description__img', {
-  //   mobile: false,
-  //   origin: 'right',
-  //   distance: '30%',
-  //   scale: 0.5,
-  //   duration: 2000
-  // });
-
-  // ScrollReveal().reveal('.qualities__content:nth-child(1)', {
-  //   duration: 5000
-  // });
-  // ScrollReveal().reveal('.qualities__content:nth-child(2)', {
-  //   duration: 7000
-  // });
-  // ScrollReveal().reveal('.qualities__content:nth-child(3)', {
-  //   duration: 9000
-  // });
-
-  // ScrollReveal().reveal('.guarantee__card:nth-child(odd)', {
-  //   duration: 3000,
-  //   origin: 'left',
-  //   distance: '50%',
-  //   opacity: .8
-  // });
-  // ScrollReveal().reveal('.guarantee__card:nth-child(even)', {
-  //   duration: 3000,
-  //   origin: 'right',
-  //   distance: '50%',
-  //   opacity: .8
-  // });
+ScrollReveal().reveal('.banner-project__illustrator', {
+  duration: 3000,
+  origin: 'top',
+  distance: '50%',
+  opacity: .8,
+  scale: 0.8
+});

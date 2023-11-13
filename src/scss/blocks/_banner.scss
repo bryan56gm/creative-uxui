@@ -17,26 +17,33 @@
 
     & .container {
         position: relative;
+        height: 100%;
     }
 
     &__img {
-        margin-inline: auto;
-        display: block;
-        width: 130px;
-        visibility: hidden;
+        position: absolute;
+        bottom: 0;
+        width: 290px;
+        left: 50%;
+        transform: translateX(-50%);
+        filter: drop-shadow(15px -5px 5px black);
 
         @include laptop {
-            position: absolute;
-            right: 0;
-            width: 230px;
-
+            filter: drop-shadow(10px 16px 10px black);
+            width: max-content;
+            max-height: 400px;
+            height: 55vh;
+            bottom: 40%;
+            right: -50px;
+            left: auto;
+            transform: translateX(0);
         }
     }
 
     &__content {
         text-align: center;
         position: absolute;
-        bottom: -6rem;
+        bottom: -3rem;
         width: 100%;
         text-transform: uppercase;
 
